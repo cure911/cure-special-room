@@ -1,0 +1,587 @@
+* {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+button {
+	appearance: auto;
+	text-rendering: auto;
+	color: -internal-light-dark(black, white);
+	letter-spacing: normal;
+	word-spacing: normal;
+	line-height: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: center;
+	align-items: flex-start;
+	cursor: default;
+	box-sizing: border-box;
+	background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+	margin: 0em;
+	padding: 1px 6px;
+	border-width: 2px;
+	border-style: outset;
+	border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+	border-image: initial;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.main-app-container {
+	height: 100vh;
+	max-height: 100vh;
+	min-height: 100vh;
+	width: 100vw;
+	max-width: 100vw;
+	min-width: 100vw;
+	margin: 0!important;
+	padding: 0!important;
+	border: 0!important;
+	outline: 0!important;
+	overflow: hidden;
+	position: relative;
+}
+
+.main-container-back {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	max-width: 100vw;
+	min-width: 100vw;
+	max-height: 100vh;
+	min-height: 100vh;
+	pointer-events: none;
+	border: 0px !important;
+	margin: 0px !important;
+	outline: 0px !important;
+	padding: 0px !important;
+	overflow: hidden !important;
+}
+
+.main-border {
+	width: 25%;
+	background-color: #00111c;
+	height: 55%;
+	z-index: 10;
+	overflow: hidden;
+	position: relative;
+	animation: 250ms ease-in 0s 1 normal none running fadeIn;
+	border-radius: 1vh;
+	pointer-events: all;
+	backdrop-filter: blur(32px);
+	font-family: 'Barlow', sans-serif;
+}
+
+.header{
+	width: 100%;
+	height: 5%;
+	display: flex;
+}
+.header p{
+	color: #ffc300;
+	font-weight: 400;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: auto;
+	margin-bottom: 0;
+}
+
+.title{
+	width: 100%;
+	height: 8%;
+	display: flex;
+}
+
+.title p{
+	font-size: 30px;
+	font-weight: bolder;
+	color: #ffd60a;
+	margin: auto;
+	margin-top: 0;
+}
+
+.border{
+	width: 100%;
+	height: 1%;
+	display: flex;
+}
+
+.border div{
+	background-color: #ffd60a;
+	width: 80%;
+	height: 1px;
+	margin: auto;
+	margin-bottom: 0;
+}
+
+.form-container{
+	width: 100%;
+	height: 86%;
+	display: none;
+}
+.smurrise-container{
+	width: 100%;
+	height: 86%;
+	display: none;
+}
+.game-container{
+	width: 100%;
+	height: 86%;
+	display: none;
+}
+.ozel-container{
+	width: 100%;
+	height: 86%;
+	display: block;
+	overflow-y: scroll;
+}
+.form-main{
+	width: 80%;
+	height: 95%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: auto;
+	margin-top: 0;
+	position: relative;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.ozel-main{
+	width: 80%;
+	height: 81%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: auto;
+	margin-top: 0;
+	position: relative;
+}
+.smurrise-main{
+	width: 80%;
+	height: 95%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: auto;
+	margin-top: 20%;
+	position: relative;
+}
+.game-main{
+	width: 80%;
+	height: 95%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin: auto;
+	margin-top: 0;
+	position: relative;
+}
+
+.name-container{
+	width: 100%;
+	height: 7%;
+	margin-top: 3vh;
+	display: flex;
+	border-bottom: 1px solid #ffc300;
+}
+.name-container p{
+	font-size: 17px;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #ffc300;
+}
+
+.name-container input{
+	color: white;
+	width: 60%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.name-container button{
+	background-color: transparent;
+	margin: auto;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 20px;
+	transition: 0.5s;
+	border: 2px solid #ffd60a00;
+}
+
+.name-container button:hover{
+	border: 2px solid #ffd60a;
+	border-bottom: 0px;
+	width: 80%;
+}
+.game-mod-container{
+	width: 100%;
+	height: 25%;
+	margin-top: 2vh;
+	display: flex;
+}
+.main-game-mod{
+	width: 70%;
+	margin: auto;
+	border-radius: 10px;
+	border: 2px solid #ffd60a;
+	height: 66%;
+}
+
+.main-game-mod .title{
+	width: 100%;
+	height: 35%;
+	display: flex;
+	border-bottom: 1px solid #ffd60a;
+}
+
+.main-game-mod .title p{
+	font-size: 15px;
+	margin: auto;
+	font-weight: lighter;
+}
+
+.game-mod-name{
+	width: 100%;
+	height: 65%;
+	display: flex;
+}
+
+.game-mod-name-p{
+	text-transform: uppercase;
+	color: white;
+	margin: auto;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.confirm-delete-buttons{
+	width: 100%;
+	display: flex;
+	height: 15%;
+}
+
+.confirm-delete-buttons button{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #ffd60a;
+	padding-right: 2vh;
+	padding-left: 2vh;
+	padding-top: 0.5vh;
+	font-weight: 600;
+	border-radius:20px;
+	cursor: pointer;
+	padding-bottom: 0.5vh;
+	margin:auto;
+	transition: 0.5s;
+}
+
+.confirm-delete-buttons button:hover{
+	background-color: #ffd60a;
+	color: black;
+}
+
+.mods{
+	width: 100%;
+	height: 10%;
+	margin-top: 1.75vh;
+	display: flex;
+}
+
+.mods button{
+	margin: auto;
+	outline: none;
+	border: none;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	color: white;
+	transition: 0.3s;
+	font-size: 17px;
+	cursor: pointer;
+	font-weight: 500;
+	border-bottom: 1px solid white;
+}
+
+.mods button:hover{
+	color: #ffd60a;
+	border-bottom: 1px solid #ffd60a;
+}
+
+.smurrise-main .name{
+	width: 80%;
+	height: 8%;
+	margin-left: 15%;
+	margin-top: 0vh;
+	display: flex;
+}
+
+.smurrise-main .name p{
+	font-size: 17px;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: gray;
+}
+
+.confirm-last-button-div{
+	width: 100%;
+	height: 10%;
+	margin-top: 1vh;
+	display: flex;
+}
+.confirm-last-button-div button{
+	margin: auto;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	padding-top: 0.5vh;
+	padding-bottom: 0.5vh;
+	font-weight: 500;
+	outline-color: none;
+	border: none;
+	background-color: transparent;
+	transition: 0.3s;
+	color: #ffd60a;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.confirm-last-button-div button:hover{
+	background-color: #ffd60a;
+	color: black;
+}
+
+.example-ozel-main{
+	width: 100%;
+	height: 18%;
+	margin-top: 2vh;
+	border: 1px solid #ffd60a;
+	padding: 0.3vh;
+	padding-left: 1vh;
+	padding-right: 1vh;
+	display: flex;
+}
+
+.example-left{
+	width: 50%;
+	height: 100%;
+	display: block;
+}
+
+.example-right{
+	width: 50%;
+	height: 100%;
+	display: block;
+}
+
+.example-id{
+	width: 100%;
+	height: 33%;
+	display: flex;
+}
+.example-name{
+	width: 100%;
+	height: 33%;
+	display: flex;
+}
+
+.example-details{
+	width: 100%;
+	height: 33%;
+	display: flex;
+}
+
+.example-id p{
+	color: #ffd60a;
+	font-weight: lighter;
+	font-size: 14px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.example-name p{
+	color: #ffd60a;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.example-details p{
+	color: #ffd60a;
+	font-weight: 300;
+	font-size: 16px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.input-join{
+	width: 100%;
+	display: flex;
+	height: 50%;
+	border-bottom: #ffd60a 1px solid;
+}
+
+.input-join-button{
+	width: 100%;
+	display: flex;
+	height: 50%;
+}
+
+.input-join p{
+	margin: auto;
+	color: #ffd60a;
+}
+
+.input-join input{
+	width: 50%;
+	margin-right: 25%;
+	font-size: 14px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: white;
+}
+.input-join-button button{
+	margin: auto;
+	padding-right: 1vh;
+	padding-left: 1vh;
+	padding-top: 0.3vh;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	color: #ffd60a;
+	font-weight: bold;
+	background-color: transparent;
+	padding-bottom: 0.3vh;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.input-join-button button:hover{
+	background-color: #ffd60a;
+	color: black;
+}
+
+.olusturma-div{
+	width: 100%;
+	height: 10%;
+	display: flex;
+}
+
+.olusturma-div button{
+	margin: auto;
+	cursor: pointer;
+	color: #ffd60a;
+	font-weight: bold;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	letter-spacing: 1px;
+	border-radius: 20px;
+	transition: 0.3s;
+	padding-bottom: 0.3vh;
+	padding-top: 0.3vh;
+	padding-left: 1vh;
+	padding-right: 1vh;
+}
+
+.olusturma-div button:hover{
+	background-color: #ffd60a;
+	color: black;
+}

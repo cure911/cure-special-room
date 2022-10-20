@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="script.js">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="background">
+         <div class="main-app-container">
+            <div class="main-container-back">
+               <div class="main-border" style="visibility: visible;">
+                  <div class="header">
+                     <p>South Side Academy 3.0</p>
+                  </div>
+                  <div class="title">
+                     <p class="title-text-chg">Özel Odalar</p>
+                  </div>
+                  <div class="border">
+                     <div></div>
+                  </div>
+                  <div class="ozel-container">
+                     <div class="ozel-main">
+                        <div class="example-ozel-main">
+                           <div class="example-left">
+                              <div class="example-id">
+                                 <p>124123</p>
+                              </div>
+                              <div class="example-name">
+                                 <p>Leal da</p>
+                              </div>
+                              <div class="example-details">
+                                 <p>Rifle 5/10</p>
+                              </div>
+                           </div>
+                           <div class="example-right">
+                              <div class="input-join">
+                                 <p>Şifre:</p> <input type="text">
+                              </div>
+                              <div class="input-join-button">
+                                 <button>KATIL</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="olusturma-div">
+                        <button class="olustur-buttons">OLUŞTUR</button>
+                     </div>
+                  </div>
+                  <div class="form-container">
+                     <div class="form-main">
+                        <div class="name-container">
+                           <p><i class="fas fa-house-user"></i> Lobi İsmi:</p>
+                           <input type="text" class="value-name" maxlength="10" min="5" placeholder="Min 5 Karakter">
+                        </div>
+                        <div class="name-container">
+                           <p><i class="fas fa-lock"></i> Şifre:</p>
+                           <input type="text" placeholder="Boş Bırakırsanız Herkese Açık Olur!" class="value-password">
+                        </div>
+                        <div class="name-container">
+                           <p><i class="fas fa-sort-numeric-down-alt"></i> Kişi Sınırı (2-10):</p>
+                           <input type="number" maxlength="10" minlength="2" value="2" class="value-sinir">
+                        </div>
+                        <div class="name-container">
+                           <button class="game-mod-chose"><p><i class="fas fa-gamepad"></i> Tıklayarak Game Modu Seçin</p></button>
+                        </div>
+                        <div class="game-mod-container">
+                           <div class="main-game-mod">
+                              <div class="title">
+                                 <p>Seçilen Mod</p>
+                              </div>
+                              <div class="game-mod-name">
+                                 <p class="game-mod-name-p">SEÇİLMEDİ</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="confirm-delete-buttons">
+                           <button class="olustur-button">OLUŞTUR</button>
+                           <button class="geri-git-button">GERİ</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="game-container">
+                     <div class="game-main">
+                       <div class="mods game-mod-buttons rifle"><button>Rifle</button></div>
+                       <div class="mods game-mod-buttons driveby"><button>Drive-by</button></div>
+                       <div class="mods game-mod-buttons sniper"><button>Sniper</button></div>
+                       <div class="mods game-mod-buttons smg"><button>SMG</button></div>
+                       <div class="mods game-mod-buttons pistol"><button>Pistol</button></div>
+                       <div class="mods game-mod-buttons revolver"><button>Revolver</button></div>
+                       <div class="mods game-mod-buttons appistol"><button>AP-Pistol</button></div>
+                     </div>
+                  </div>
+                  <div class="smurrise-container">
+                     <div class="smurrise-main">
+                        <div class="name">
+                           <p><i class="fas fa-house-user"></i> Lobi İsmi:<p class="last-loby-name"></p></p>
+                        </div>
+                        <div class="name">
+                           <p><i class="fas fa-lock"></i> Şifre:<p class="last-loby-password"></p></p>
+                        </div>
+                        <div class="name">
+                           <p><i class="fas fa-sort-numeric-down-alt"></i> Kişi Sınırı:<p class="last-loby-sinir"></p></p>
+                        </div>
+                        <div class="name">
+                           <p><i class="fas fa-gamepad"></i> Game Mod:<p class="last-loby-mode"></p></p>
+                        </div>
+                        <div class="name">
+                           <p><i class="fas fa-fingerprint"></i> Game ID:<p class="last-loby-random"></p></p>
+                        </div>
+                        <div class="confirm-last-button-div">
+                           <button>ONAYLA ve BAŞLA</button>
+                           <button class="son-iptal">İPTAL</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
